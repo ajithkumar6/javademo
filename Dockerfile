@@ -1,3 +1,3 @@
 FROM nginx
-COPY / /var
+COPY testing /var
 
