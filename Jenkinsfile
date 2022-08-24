@@ -11,7 +11,7 @@ pipeline {
         }
    stage ('pushing ti dockerhub'){
      steps{
-       sh 'docker login -u $DOCKER_CRED_USR -p $DOCKER_CRED_PSW'
+       sh 'echo $DOCKER_CRED_PSW | docker login -u $DOCKER_CREDE_USR --password-stdin'
        sh 'docker push ajithkumar232/latest:$BUILD_NUMBER'
      }
    }
