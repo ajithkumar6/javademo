@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                docker build -t ajithkumar232/latest .
+                sh 'docker build -t ajithkumar232/latest .'
             }
         }
     }
