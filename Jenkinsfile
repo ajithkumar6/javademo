@@ -1,8 +1,6 @@
 pipeline {
     agent {
-        docker { image 'docker:latest'
-                 label 'new'
-    }
+        docker { image 'docker:latest' }
     }
     stages {
         stage('Example') {
